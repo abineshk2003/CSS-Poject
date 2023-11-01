@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&family=Poppins:wght@300;400&display=swap');
+
+*{
+margin:0;
+padding:0;
+font-family:poppins;	
+box-sizing:border-box;
+}
+
+body{
+height:100vh;
+width:100vw;
+display:flex;
+justify-content:center;
+align-items:center;
+flex-direction:column;
+gap:10px 0;
+}
+
+.text{
+font-size:70px;
+color:#4C4C4C;
+display:inline-block;
+-webkit-text-stoke-width:0px;
+position:relative;
+
+}
+
+.text::before{
+position:absolute;
+left:0;
+right:0;
+top:0;
+bottom:0;
+content:attr(data-letters);
+overflow:hidden;
+}
+
+.text.top::before{
+ color:red;
+transition:1s ease-in-out;
+height:0;
+z-index:1;
+}
+.text.top:hover:before{
+height:100%;
+}
+
+/*-------------------------------------------------------*/
+
+.text.bottom{
+color:red;
+}
+.text.bottom:before{
+transition:1s ease-in-out;
+color:#4C4C4C;
+height:100%;
+z-index:1;
+}
+.text.bottom:hover:before{
+height:0;
+}

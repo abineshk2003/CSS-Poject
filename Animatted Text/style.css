@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&family=Poppins:wght@500&display=swap');
+
+*{
+	font-family: 'Open Sans', sans-serif;
+	margin:0;
+	padding:0;
+}
+
+body{
+	width:100vw;
+	height:100vh;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	background-color:#333;
+	
+	
+
+}
+h1{
+	font-size:150px;
+	background-image: linear-gradient(to right bottom, #8959be, #e74fa3, #ff676f, #ffa234, #ebe112);
+	color:transparent;
+	background-clip:text;
+	-webkit-background-clip:text;
+	background-size:500% 500%;
+	animation:Abinesh 2s ease infinite;
+	
+	
+}
+
+@keyframes Abinesh{
+0%{
+	background-position:0%
+}
+50%{
+	background-position:100%
+}
+100%{
+	background-position:0%
+}
+
+
+}
